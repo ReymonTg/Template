@@ -1,0 +1,27 @@
+{
+    "name"       : "",
+    "description": "",
+    "keywords"   : [
+    ],
+    "type"   : "library",
+    "license": "GPL-3.0-only",
+    "authors": [
+    ],
+    "autoload": {
+        "psr-4": {
+            "Namespace\\": "./src"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+        "amphp/php-cs-fixer-config": "^2.0"
+    },
+    "scripts": {
+        "build": [
+            "@cs-fix"
+        ],
+        "cs"    : "php ./vendor/bin/php-cs-fixer fix -v --diff --dry-run",
+        "cs-fix": "php ./vendor/bin/php-cs-fixer fix -v --diff"
+    }
+}
