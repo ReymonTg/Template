@@ -29,7 +29,7 @@
         "build": [
             "@cs-fix"
         ],
-        "cs"    : "php ./vendor/bin/php-cs-fixer fix -v --diff --dry-run",
-        "cs-fix": "php ./vendor/bin/php-cs-fixer fix -v --diff"
+        "cs"    : "php -d pcre.jit=0 vendor/bin/php-cs-fixer fix -v --diff  --dry-run",
+        "cs-fix": "php -d pcre.jit=0 vendor/bin/php-cs-fixer fix -v --diff "
     }
 }
