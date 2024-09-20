@@ -23,7 +23,7 @@
     "require": {
     },
     "require-dev": {
-        "amphp/php-cs-fixer-config": "^2.0"
+        "amphp/php-cs-fixer-config": "^2"
     },
     "scripts": {
         "build": [
